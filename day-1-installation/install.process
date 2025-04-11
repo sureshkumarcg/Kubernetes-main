@@ -49,6 +49,9 @@ You can follow same procedure in the official  AWS document [Getting started wit
       --region ap-south-1 \
    --node-type t2.small \
 
+after cluster creation , please use this command to update the cluster if config missed
+
+aws eks --region us-east-1 update-kubeconfig --name naresh
 
 5. To delete the EKS clsuter 
    ```sh 
