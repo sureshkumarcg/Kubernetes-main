@@ -45,17 +45,17 @@ You can follow same procedure in the official  AWS document [Getting started wit
    --zones <AZ-1>,<AZ-2>
    
    example:
-   eksctl create cluster --name naresh \
-      --region ap-south-1 \
-   --node-type t2.small \
+   eksctl create cluster --name hemandh \
+      --region us-east-1 \
+   --node-type t2.micro \
 
 after cluster creation , please use this command to update the cluster if config missed
 
-aws eks --region us-east-1 update-kubeconfig --name naresh
+aws eks --region us-east-1 update-kubeconfig --name hemandh
 
 5. To delete the EKS clsuter 
    ```sh 
-   eksctl delete cluster naresh --region ap-south-1
+   eksctl delete cluster naresh --region us-east-1
    ```
    
 6. Validate your cluster using by creating by checking nodes and by creating a pod 
